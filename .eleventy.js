@@ -37,8 +37,8 @@ module.exports = function(config) {
     //custom collections
     config.addCollection("posts", function(collection) {
         return collection.getFilteredByGlob("**/posts/*.md");
-      });
-      
+    });
+
     config.addCollection("tagList", require("./_11ty/helpers/getTagList.js"));
 
 
